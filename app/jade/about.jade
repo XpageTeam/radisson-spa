@@ -1,0 +1,36 @@
+html
+	head
+		meta(charset="utf-8")
+		title Главная
+		include inc/head.jade
+		include inc/css.jade
+	body.inner
+		#page-wr
+			.mobile-menu
+			#content(style="background: url('img/about-bg.jpg') repeat-y, right")
+				include inc/header.jade
+				.content
+					section.about
+						.wrapper
+							h1.about-title Ресторан «Pol’za»
+							.about-sub-title Натуральная и органическая еда
+
+							.about-text.text-page
+								p Рестораны с любовью ко всему вкусному и радостному.<br> Закажите лучший столик в «Pol’za»!
+
+								p Я помню как я боролась с лишним весом<br> и договаривалась со своим организмом, мы поедим,<br> что захочешь, но утром и немножко,<br> я решила попробовать договорится с ним и  сейчас. 
+
+								p Маленькими шагами я стала заменять сладость<br> на белом сахаре другими видами сахара и самое<br> удивительное, заметила, что дав организму сладость<br> не рафинированную, он успокаивается с одного<br> небольшого кусочка и не требует еще и еще как после<br> покупного мороженого,  где съев последний кусочек<br> хочется купить себе следующее.
+							.about__main-foto
+								img(src="img/photos/about-1.jpg", alt="")
+							.about__gallery
+
+								.about__foto-left
+									img(src="img/photos/about-2.jpg", alt="")
+								.about__foto-right
+									img(src="img/photos/about-3.jpg", alt="")
+
+
+						
+				include inc/footer.jade
+		include inc/scripts.jade

@@ -1,0 +1,27 @@
+html
+	head
+		meta(charset="utf-8")
+		title Главная
+		include inc/head.jade
+		include inc/css.jade
+	body.loading.main
+		.loader
+			include inc/loader.svg
+		#page-wr
+			.mobile-menu
+			#content
+				include inc/header.jade
+				.main-slider__cont
+					.main-slider
+						- for (var i = 0; i < 4; i++)
+							.main-slider__slide(style="background: url('img/photos/main-slider-img.jpg')")
+								//- img.main-slider__slide-img(src="img/photos/main-slider-img.jpg", alt="")
+								//- .main-slider__slide-title-cont
+								//- 	.wrapper
+								//- 		.main-slider__slide-title 4 октября<br> Всемирный день<br> защиты животных
+								//- 		.main-slider__slide-btn
+								//- 			a.btn.ico-btn(href="#") Подробнее
+
+			//- include inc/footer.jade
+			
+		include inc/scripts.jade

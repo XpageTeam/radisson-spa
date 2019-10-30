@@ -1,0 +1,16 @@
+footer.footer
+		.wrapper
+			.footer-contacts
+				.footer__phone
+					a(href="tel: 8 (351) 314 72 06") 8 (351) 314 72 06
+				.footer__mail
+					a(href="mailto: polza@gmail.com") polza@gmail.com
+			.footer__soc
+				.soc
+					each title in ["facebook", "v", "instagram", "youtube"]
+						.soc__item
+							a.soc__link(href="#" style="background-image: url('img/ico-"+title+".png')")
+			.footer__dev
+				a.dev(href="http://xpage.ru" traget="_blank")
+					span.dev__text Сделано в
+					img.dev__img(src="img/dev-logo.png", alt="")

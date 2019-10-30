@@ -1,0 +1,320 @@
+html
+	head
+		meta(charset="utf-8")
+		title Новости
+		include inc/head.jade
+		include inc/css.jade
+	body.inner
+		#page-wr
+			.mobile-menu
+			#content(style="background: #f7f6f7;")
+				include inc/header.jade
+				.content
+					section.menu
+						.wrapper
+							.main-block__menu
+								.main-block__menu--left#breakfast
+									h1.menu-main__title Меню «Pol’za»
+									.menu-main__sub-title Натуральная и органическая еда
+									.block-btn
+										a(href="#breakfast").btn-defolt Завтрак 
+										a(href="#main-menu").btn-defolt Основное меню  
+										a(href="#sets").btn-defolt Сеты
+									.menu__list
+										.menu-title Завтраки
+										.text-page
+											.menu__price
+												.menu__el
+													.menu__el-title
+														span Яйцо бенедикт с профитролями и голландским соусом, подается с мороженным из лосося
+													.menu__el-price
+														span 350p.
+												.menu__el
+													.menu__el-title
+														span Скрамбл из тофу, подается с томатами и шпинатом
+													.menu__el-price 
+														span 250 р.
+												.menu__el
+													.menu__el-title
+														span Сладкая рисовая молочная каша со специями
+													.menu__el-price
+														span 150 р.
+												.menu__el
+													.menu__el-title
+														span Овсяная каша с матчей, кокосовым молоком и свежими ягодами
+													.menu__el-price
+														span 200 р.
+												.menu__el
+													.menu__el-title
+														span Ячменная каша с медовыми сливами
+													.menu__el-price
+														span 150 р.
+												.menu__el
+													.menu__el-title
+														span Сырники классические
+													.menu__el-price
+														span 160 p.
+												.menu__el
+													.menu__el-title
+														span Венские вафли с сорбетом из матчи и банана 
+													.menu__el-price
+														span 160 p.
+												.menu__el
+													.menu__el-title
+														span Черничный паштет с орехами на основе льна
+													.menu__el-price
+														span 250 p.
+												.menu__el
+													.menu__el-title
+														span Чиа пудинг (карамельный, ягодный)
+													.menu__el-price
+														span 250 p.
+											p По желанию можно добавить
+										
+											ul
+												li кокосовый крем 70 р
+												li свежие ягоды 70 р.
+
+											.menu__el
+												.menu__el-title
+													span Гранола собственного производства
+												.menu__el-price
+													span 250 p.
+
+								.main-block__menu--right
+									figure.photo-right
+										img(src="img/photos/menu-img-1.jpg", alt="")
+
+							.menu__photo-left#main-menu
+								figure.photo-left
+									img(src="img/photos/menu-img-2.jpg", alt="")
+								.menu__list.text-page
+									.menu-title Основные блюда
+									
+									.menu__price
+										.menu__list-title Супы
+
+
+										.menu__el
+											.menu__el-title
+												span Минестроне из перловой крупы и шалфея
+											.menu__el-price
+												span 250 p.
+										.menu__el
+											.menu__el-title
+												span Том Ям вегетарианский
+											.menu__el-price
+												span 250 p.
+									.menu__price
+										.menu__list-title Салаты/Закуски
+										.menu__el
+											.menu__el-title
+												span Сицилийский салат с пророщенной пшеницей и цитрусовыми
+											.menu__el-price
+												span 350 p.
+
+										.menu__el
+											.menu__el-title
+												span Салат из запеченной свеклы, мягкого сыра и клубники
+											.menu__el-price
+												span 350 p.
+										.menu__el
+											.menu__el-title
+												span Салат из пророщенной гречис авакадо и томатами
+											.menu__el-price
+												span 350 p.
+										.menu__el
+											.menu__el-title
+												span Теплый салат с киноа и булгуром с тар-таром из свежих овощей в острой фирменной заправке от Дианы Волтышевой
+											.menu__el-price
+												span 350 p.
+										.menu__el
+											.menu__el-title
+												span Закуска из свежих овощей с хумусом (морковь, перец болгарский, огурец, сельдерей)
+											.menu__el-price
+												span 350 p.
+										.menu__el
+											.menu__el-title
+												span Традиционные вьетнамские немы с овощами
+											.menu__el-price
+												span 350 p.
+									.menu__price
+										.menu__list-title Горячее
+										
+										.menu__el
+											.menu__el-title
+												span Чечевица с запеченными овощами
+											.menu__el-price
+												span 350 p.
+										.menu__el
+											.menu__el-title
+												span Булгур с грибами, подается с грибным муссом
+											.menu__el-price
+												span 350 p.
+										.menu__el
+											.menu__el-title
+												span Индийское карри подается с чапати и зеленым салатом
+											.menu__el-price
+												span 350 p.
+										.menu__el
+											.menu__el-title
+												span Свекольный KOSHOT (перловая крупа приготовленная в стиле ризотто) подается с морковным пюре
+											.menu__el-price
+												span 350 p.
+
+
+							.menu__photo-right
+								.menu__list.text-page
+									.menu-title Raw Cook*
+									.menu__price
+										.menu__el
+											.menu__el-title
+												span Сливочный грибной крем суп из пророщенной зеленой гречи
+											.menu__el-price
+												span 300 p.
+
+										.menu__el
+											.menu__el-title
+												span Овощной тар-тар
+											.menu__el-price
+												span 300 p.
+
+										.menu__el
+											.menu__el-title
+												span Салат море под шубой
+											.menu__el-price
+												span 300 p.
+										.menu__el
+											.menu__el-title
+												span Салат с черной икрой “Рублевка под снегом”
+											.menu__el-price
+												span 300 p.
+										.menu__el
+											.menu__el-title
+												span Каннеллони с грибами под сливочным и томатным соусами
+											.menu__el-price
+												span 300 p.
+										.menu__el
+											.menu__el-title
+												span Сыроедческая паста из цукини с соусом песто
+											.menu__el-price
+												span 300 p.
+									
+									p*Сыроедческая кухня-не используют духовые шкафы, микроволновки, пароварки, сковородки и печи. Максимальная температура приготовления 42 градуса
+
+
+									
+								figure.photo-right
+									img(src="img/photos/menu-img-3.jpg", alt="") 
+
+
+
+							.menu__photo-no
+								.menu-title Меню напитков
+								.menu__list
+									.menu__item.text-page
+										.menu__list-title Кофе без кофе 250мл
+										.menu__price
+											.menu__el
+												.menu__el-title
+													span Капучино матча
+												.menu__el-price
+													span 150 p.
+											.menu__el
+												.menu__el-title
+													span Свекольный латте
+												.menu__el-price
+													span 150 p.
+											.menu__el
+												.menu__el-title
+													span Золотое молоко
+												.menu__el-price
+													span 100 p.
+
+										
+
+									.menu__item.text-page
+										.menu__list-title Капучино 200мл
+										.menu__price
+											.menu__el
+												.menu__el-title
+													span На обычном молоке
+												.menu__el-price
+													span 100 p.
+											.menu__el 
+												.menu__el-title
+													span На миндальном молоке
+												.menu__el-price
+													span 100 p.
+											.menu__el
+												.menu__el-title
+													span Лавандовае
+												.menu__el-price
+													span 100 p.
+											<br>
+											.menu__el
+												.menu__el-title
+													span Экспрессо
+												.menu__el-price
+													span 100 p.
+											.menu__el
+												.menu__el-title
+													span Американо
+												.menu__el-price
+													span 100 p.
+
+										
+									.menu__item.text-page
+										.menu__list-title Чай без чая 250мл
+										
+										.menu__price
+											.menu__el
+												.menu__el-title
+													span Облепиховый чай
+												.menu__el-price
+													span 100 p.
+											.menu__el 
+												.menu__el-title
+													span Клюквенный чай
+												.menu__el-price
+													span 100 p.
+											.menu__el
+												.menu__el-title
+													span Яблочный пирог
+												.menu__el-price
+													span 100 p.
+											.menu__el
+												.menu__el-title
+													span Вишневый глинтвейн
+												.menu__el-price
+													span 100 p.
+
+
+									.menu__item.text-page
+										.menu__list-title Чай заварной
+										.menu__price
+											.menu__el
+												.menu__el-title
+													span Ассортимент уточняйте у официанта
+												.menu__el-price
+													span 100p./300p.
+
+									.menu__item.text-page
+										.menu__list-title **Смузи 250мл
+										.menu__price
+											.menu__el
+												.menu__el-title
+													span “Черничный пирог с сельдереем”
+												.menu__el-price
+													span 100p.
+											.menu__el
+												.menu__el-title
+													span “Тиффани”
+												.menu__el-price
+													span 100p.
+								.info-dop
+									p *В линейке “кофе без кофе” используется только миндальное молоко, специи и суперфуды <br> В линейке “чай без чая” используется только ягоды, фрукты и специи <br> **разработанны специалистом по правильному питанию Дианой Волтышевой
+
+									
+				include inc/footer.jade
+		include inc/scripts.jade

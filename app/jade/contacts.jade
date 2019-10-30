@@ -1,0 +1,36 @@
+html
+	head
+		meta(charset="utf-8")
+		title Главная
+		include inc/head.jade
+		include inc/css.jade
+	body.inner
+		#page-wr
+			.mobile-menu
+			#content(style="background: url('img/photos/contacts.jpg')")
+				include inc/header.jade
+				.content
+					section.contacts
+						.wrapper
+							h1.block-title Контакты
+
+							address.contacts-info
+								.location 
+									span г. Челябинск, пр. Ленина 55
+								.phone
+									span Телефон
+									a(href="tel: 314 72 06") 314 72 06
+								.mail
+									span Почта 
+									a(href="mailto: polza@gmail.com") polza@gmail.com
+							.soc
+								each title in ["facebook", "v", "instagram", "youtube"]
+									.soc__item
+										a.soc__link(href="#" style="background-image: url('img/"+title+".png')")
+
+						
+
+					
+
+			//- include inc/footer.jade
+		include inc/scripts.jade
