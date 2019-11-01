@@ -1,4 +1,4 @@
-$output-bourbon-deprecation-warnings: false;
+$output-bourbon-deprecation-warnings: false
 @import "bourbon"
 @import "vars"
 
@@ -14,9 +14,6 @@ $output-bourbon-deprecation-warnings: false;
 $base-color: #171717
 $border-color: #d5dbdf
 $error-color: #ff0024
-
-.fancybox-close
-	background: url(../img/fancybox-close.png) no-repeat center
 
 .fancybox
 	
@@ -67,11 +64,71 @@ $error-color: #ff0024
 	~ .forms__error-message
 		display: block
 
+.popup-call
+	width: 500px
+
+.popup-form
+	display: none
+	padding: 50px
+
+	&.fancybox-content
+		padding: 38px 47px 44px
+		background: #fff
+
+	&__title
+		position: relative
+		margin-bottom: 20px
+		font-size: 30px
+		font-weight: 600
+		color: #000
+
+	&__text 
+		text-align-last: auto
+		color: #000
+		font-size: 14px
+		color: #9BAABB
+		margin-bottom: 30px
+
+	textarea
+		width: 100%
+		min-width: 100%
+		max-width: 100%
+
+		padding-top: 10px
+		padding-bottom: 10px
+		min-height: 100px !important
+
+	.forms-submit-cont
+		margin-top: 40px
+
+	
+
+
+	&__content
+		margin-top: 50px
+
+	.button 
+		span 
+			padding: 0
+		input 
+			padding: 0.6em 2em
+			background-color: transparent
+			border: 0
+			font-size: rem(16)
+			font-weight: 300
+			position: relative
+			z-index: 1000
+
+		&:hover 
+			input 
+				color: #fff
+
 .forms
 	display: none
 	box-sizing: border-box
 	padding: 1.4rem
 	background: #fff
+
 
 	&__title
 		font-size: rem(30)
@@ -148,6 +205,10 @@ $error-color: #ff0024
 		border-radius: 1px
 		padding: 0 vw(17)
 		outline: none
+
+		&-cont
+			display: flex
+			flex-direction: column-reverse
 
 		&_error
 			border-color: $error-color
@@ -275,7 +336,7 @@ $error-color: #ff0024
 		color: #fff
 		border: 0
 		cursor: pointer
-		// background: $main-color
+		background: $main-color
 		font-size: rem(18)
 		padding: vh(12) vw(40)
 
@@ -974,6 +1035,57 @@ $error-color: #ff0024
 	.thanks-forms
 		width: auto 
 		padding: 1.4rem
+
+	.fancybox-lock, .fancy-active
+		#page-wr
+			display: none
+		body, html
+			overflow-x: !important
+		.fancybox-lock, .fancybox-lock body
+			overflow-x: hidden !important
+		.fancybox-wrap, .fancybox-mobile, .fancybox-type-inline, .fancybox-opened
+			position: absolute !important
+			top: 0 !important
+			left: 0 !important
+			opacity: 1 !important
+			overflow: visible !important
+			width: 100% !important
+			height: 100% !important
+		.fancybox-skin
+			width: 100% !important
+			height: 100% !important
+		.fancybox-outer
+			width: 100% !important
+			height: 100% !important
+		.fancybox-inner
+			width: 100% !important
+			height: 100% !important
+			overflow-y: scroll !important
+			overflow-x: hidden !important
+			-webkit-overflow-scrolling: touch
+		.fancybox-overlay
+			width: 100% !important
+			height: 100% !important
+			display: block !important
+		.fancybox-overlay-fixed
+			width: 100% !important
+			height: 100% !important
+			display: block !important
+			overflow: auto !important
+		.fancybox-overlay
+			background: none !important
+			width: 100% !important
+
+	.forms-wrap
+		flex-direction: column
+
+	.popup-form
+		width: 100%
+		padding: 20px !important
+
+	.forms__input-cont
+		&:not(:last-child)
+			margin-bottom: 20px 
 
 
 @media screen and (max-width: 480px)
