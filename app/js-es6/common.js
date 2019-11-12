@@ -97,19 +97,19 @@ loadScripts = () => {
 		});
 
 
-		var zakuski = $('#osnovnye-blyuda .menu__price:nth-child(3)').clone();
-		$('.menu .wrapper').append('<div class="js__zakuski">\
-				<div class="menu-title">Закуски</div>\
-			</div>');
-		$('.menu .js__zakuski').prepend('<div class="js__zakuski__img">\
-				<img src="../local/templates/polza2017/img/zakuski.jpg">\
-			</div>');
-		$('.menu .js__zakuski').append(zakuski);
+		// var zakuski = $('#osnovnye-blyuda .menu__price:nth-child(3)').clone();
+		// $('.menu .wrapper').append('<div class="js__zakuski">\
+		// 		<div class="menu-title">Закуски</div>\
+		// 	</div>');
+		// $('.menu .js__zakuski').prepend('<div class="js__zakuski__img">\
+		// 		<img src="../local/templates/polza2017/img/zakuski.jpg">\
+		// 	</div>');
+		// $('.menu .js__zakuski').append(zakuski);
 
-		$('.js__zakuski__img').click(function(){
-			var $this = $(this);
-			$this.closest('.js__zakuski').find('.menu-title, .menu__price').slideToggle("slow");
-		});
+		// $('.js__zakuski__img').click(function(){
+		// 	var $this = $(this);
+		// 	$this.closest('.js__zakuski').find('.menu-title, .menu__price').slideToggle("slow");
+		// });
 
 	}
 
